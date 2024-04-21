@@ -1,0 +1,27 @@
+SELECT REPLICATE('Pragim', 3);
+
+SELECT '     '
+
+SELECT SPACE(5);
+
+
+SELECT * FROM tblEmployee_4;
+
+SELECT * FROM tblEmployee_3;
+
+SELECT * FROM tblEmployee_2;
+
+SELECT * FROM tblPerson;
+
+SELECT * FROM tblPerson1;
+
+SELECT * FROM [dbo].[tblSanFranCustomers];
+
+SELECT * FROM tblPerson;
+
+SELECT Email, PATINDEX('%@a.com', Email) AS FirstOccurence FROM [dbo].[tblPerson];
+
+SELECT Email, PATINDEX('%@a.com', Email) AS FirstOccurence FROM [dbo].[tblPerson]
+WHERE PATINDEX('%a.com', Email) > 0;
+
+SELECT Email, REPLACE(Email, '.com','.in') AS ConvertedEmail FROM [dbo].[tblPerson];
